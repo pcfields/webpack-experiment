@@ -2,12 +2,11 @@
   "name": "webpack-experiment",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "private":"true",
+  "private": "true",
   "scripts": {
-    "start":"webpack serve",
-    "watch":"webpack --watch",
-    "build":"webpack"
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,5 +23,8 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

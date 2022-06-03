@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gabriela';
+    src: url('./fonts/Gabrialle.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hello {
+    color: red;
+    background: black url('./img/webpack-logo.svg') no-repeat;
+    font-family: 'Gabriela';
+    font-size: 10em;
+}

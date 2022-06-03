@@ -1,20 +1,26 @@
-import { join } from "lodash";
+import { join } from 'lodash'
+import './styles.css'
+import webpackLogo from './img/webpack-logo.svg'
 
-export const anObject = {
-  one: "one value",
-  two: "two value",
-  three: "three value",
-};
-
-console.log(anObject);
+import Data from './data.xml'
+import Notes from './data.csv'
 
 function component() {
-  const element = document.createElement("div");
+    const element = document.createElement('div')
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = join(["Hello", "webpack"], " ");
+    // Lodash, currently included via a script, is required for this line to work
+    element.innerHTML = join(['Hello', 'webpack'], ' ')
+    element.classList.add('hello')
 
-  return element;
+    const logo = new Image()
+    logo.src = webpackLogo
+    element.appendChild(logo)
+
+    console.log({ Data })
+    console.log({ Notes })
+
+    return element
 }
 
-document.body.appendChild(component());
+document.body.appendChild(component())
+// document.body.appendChild()
